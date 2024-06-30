@@ -1,6 +1,9 @@
+# myapp/admin.py
+
 from django.contrib import admin
+from import_export.admin import ImportExportModelAdmin  # Import this class
 from .models import Customer, BankAccount, Transaction
 
-admin.site.register(Customer)
-admin.site.register(BankAccount)
-admin.site.register(Transaction)
+@admin.register(Customer, BankAccount, Transaction)
+class MyModelAdmin(ImportExportModelAdmin):  # Use ImportExportModelAdmin
+    pass
