@@ -43,11 +43,8 @@ class BankAccount(models.Model):
         Transaction.objects.create(account=self, transaction_type='withdrawal', amount=amount)
 
 class Transaction(models.Model):
-    account = models.ForeignKey(BankAccount, on_delete=models.CASCADE, related_name='transactions')
+    date = models.CharField(max_length=100)
     transaction_type = models.CharField(max_length=10)
     remark=models.CharField(max_length=300)
     amount = models.DecimalField(max_digits=10, decimal_places=2)
-    timestamp = models.DateTimeField()
-
-    def __str__(self):
-        return f"{self.transaction_type.capitalize()} of {self.amount} on {self.timestamp} for {self.account.user.username}'s {self.account.currency} Account ({self.account.account_number})"
+    balance=models.DecimalField(max_digits=10, decimal_places=2)

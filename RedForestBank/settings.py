@@ -58,7 +58,7 @@ ROOT_URLCONF = 'RedForestBank.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:/Users/fd/desktop/RedForestBank/templates'],
+        'DIRS': ['C:/Users/Abbati/documents/rfbank/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
