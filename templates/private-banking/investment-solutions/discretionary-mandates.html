@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+RFB|
+{% endblock %}
+
+{% block content %}
+<div class="main-content">
+  <section class="hero-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="breadcrumb">
+            <ul>
+              <li><a href="/">Homepage</a></li>
+              <li><a href="/private-banking.html">Private Banking</a></li>
+              <li><a href="/private-banking/investment-solutions.html">Investment Solutions</a></li>
+              <li><span>Discretionary Mandates</span></li>
+            </ul>
+          </nav>
+          <nav class="breadcrumb-mobile">
+            <a href="#"><i class="icon-efg-breadcrumb"></i><span>Discretionary Mandates</span><i class="icon-efg-arrow-down"></i></a>
+            <div>
+              <ul>
+                <li><a href="/">Homepage</a></li>
+                <li><a href="/private-banking.html">Private Banking</a></li>
+                <li><a href="/private-banking/investment-solutions.html">Investment Solutions</a></li>
+                <li><span>Discretionary Mandates</span></li>
+              </ul>
+              <a href="#" class="btn close">Close</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="hero-content lazyload" data-sizes="auto"
+          data-bgset="{% static 'images/privatebanking/mandates.jpg' %}"
+          >
+          <div>
+            <h1>Discretionary Mandates</h1>
+            <p>Because time is your most valuable asset</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="">
+  <div class="container">
+    <div class="row section-headline">
+      <div class="col-12 col-lg-10 col-xxl-8 mx-auto">
+        <h2>Private Banking with a relentless focus on your goals</h2>
+        <p class="indent">Time is your most valuable asset, which is why you would like to delegate investment decisions to an experienced investment professional. You need a solid and reliable partner who can manage your portfolio of assets to grow and protect your wealth – with a relentless focus on your interests and those of future generations. A trusted partner, for the long term. <br/><br/>At EFG, our expertise in portfolio management, combined with the most advanced asset management techniques, means that you can be confident your assets are in the hands of trusted professionals, allowing you to dedicate more time to the things that matter most to you. <br/><br/>You can delegate the management of your wealth through our innovative, individually tailored discretionary mandates. They are designed to generate performance according to your investment objectives and risk profile. In this way, you can be assured that your investments are being carefully monitored at all times while benefiting from our first class investment expertise.</p>
+        <a href="/contact.html" title="Get in touch " class="btn">Get in touch <i class="icon-efg-line-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bkg-light-grey overflow-hidden">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="side-component full align-top">
+          <div class="bkg-light-grey side-content">
+            <h3>Our investment process</h3>
+            <div class="text-article mt-base"><p>Our disciplined investment process is based on in-depth macro-economic and proprietary market research, which forms the basis for decisions on asset allocation and stock picking. The mandates are managed actively to ensure that the selected investment strategy meets your individual needs and investment goals.</p>
+            </div>
+            <a href="/asset-management/investment-process.html" class="btn mt-20">Learn more</a>
+          </div>
+          <div class="side-image">
+            <div class="lazyload" data-sizes="auto" data-bgset="{% static 'images/privatebanking/process.jpg' %}"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% include 'itstart.html' %}
+    {% endblock %}

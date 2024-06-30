@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+RFB|
+{% endblock %}
+
+{% block content %}
+<div class="main-content">
+  <section class="hero-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="breadcrumb">
+            <ul>
+              <li><a href="/">Homepage</a></li>
+              <li><a href="/private-banking.html">Private Banking</a></li>
+              <li><a href="/private-banking/investment-solutions.html">Investment Solutions</a></li>
+              <li><span>Alternative &amp; private market investments</span></li>
+            </ul>
+          </nav>
+          <nav class="breadcrumb-mobile">
+            <a href="#"><i class="icon-efg-breadcrumb"></i><span>Alternative &amp; private market investments</span><i class="icon-efg-arrow-down"></i></a>
+            <div>
+              <ul>
+                <li><a href="/">Homepage</a></li>
+                <li><a href="/private-banking.html">Private Banking</a></li>
+                <li><a href="/private-banking/investment-solutions.html">Investment Solutions</a></li>
+                <li><span>Alternative &amp; private market investments</span></li>
+              </ul>
+              <a href="#" class="btn close">Close</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="hero-content lazyload" data-sizes="auto"
+          data-bgset="{% static 'images/privatebanking/alternative.jpg' %}"
+          >
+          <div>
+            <h1>Alternative and private market investments</h1>
+            <p>Searching for attractive investment opportunities around the globe</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="">
+  <div class="container">
+    <div class="row section-headline">
+      <div class="col-12 col-lg-10 col-xxl-8 mx-auto">
+        <h2>Exploring outstanding opportunities to enhance your portfolio </h2>
+        <p class="indent">Alternative Investments are increasingly popular with private and institutional investors. They are now viewed as an asset class in their own right – largely because of their often low correlation to equity and bond markets. <br/>Our strong global network gives us access to a full spectrum of specialized firms and leading service providers with in-depth knowledge of the Alternative Investment space.</p>
+        <a href="/contact.html" title="Get in touch" class="btn">Get in touch<i class="icon-efg-line-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section><section class="bkg-light-grey ">
+  <div class="container">
+    <div class="row section-headline">
+      <div class="col-12 col-lg-8 col-xl-7 offset-xl-1">
+        <h2>Generating uncorrelated, differentiated returns </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-lg-10 mx-auto">
+        <div class="info-box-wrapper">
+          <div class="info-box">
+            <div>
+              <i style="background-image: url({% static 'images/privatebanking/dollar.svg' %}); background-size: cover;"></i>
+              <h4>Hedge funds</h4>
+              <p>Hegde funds are designed to benefit from market inefficiencies, regardless of the direction of the market. They provide a range of benefits, including increased diversification, lower levels of overall portfolio volatility and higher returns in periods when traditional investments entail uncertainty.<br/>Thanks to our long experience in the space, we are able to provide access to closed and high-quality funds via our excusive Multi-Manager products. Our strong list of individual managers available in UCITS format can also be accessed directly via Advisory or Discretionary mandates.</p>
+            </div>
+          </div>
+          <div class="info-box">
+            <div>
+              <i style="background-image: url({% static 'images/privatebanking/private.svg' %}); background-size: cover;"></i>
+              <h4>Private markets</h4>
+              <p>Are you in this for the long run? Then we are by your side offering comprehensive advice and a range of solutions around private markets, including our own in-house vintage programme CERES. This is your chance to transform companies, help them to grow faster, complete acquisitions, launch new products – essentially make a real difference. </p>
+            </div>
+          </div>
+          <div class="info-box">
+            <div>
+              <i style="background-image: url({% static 'images/privatebanking/realestate.svg' %}); background-size: cover;"></i>
+              <h4>Real estate</h4>
+              <p>We offer comprehensive advisory solutions and products focused on real estate. Our product range provides access across both direct and indirect vehicles, encompassing all sectors and regions. Products in this category are externally managed funds or vehicles investing directly or indirectly in real estate equity or debt.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% include 'itstart.html' %}
+
+    {% endblock %}

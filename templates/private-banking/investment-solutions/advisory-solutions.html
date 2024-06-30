@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+RFB|Advisory Solutions
+{% endblock %}
+
+{% block content %}
+
+<div class="main-content">
+  <section class="hero-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="breadcrumb">
+            <ul>
+              <li><a href="/">Homepage</a></li>
+              <li><a href="{% url 'RedForest:privatebanking' %}">Private Banking</a></li>
+              <li><a href="{% url 'RedForest:investmentsolutions' %}">Investment Solutions</a></li>
+              <li><span>Advisory Solutions</span></li>
+            </ul>
+          </nav>
+          <nav class="breadcrumb-mobile">
+            <a href="#"><i class="icon-efg-breadcrumb"></i><span>Advisory Solutions</span><i class="icon-efg-arrow-down"></i></a>
+            <div>
+              <ul>
+                <li><a href="/">Homepage</a></li>
+                <li><a href="{% url 'RedForest:privatebanking' %}">Private Banking</a></li>
+                <li><a href="{% url 'RedForest:investmentsolutions' %}">Investment Solutions</a></li>
+                <li><span>Advisory Solutions</span></li>
+              </ul>
+              <a href="#" class="btn close">Close</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="hero-content lazyload" data-sizes="auto"
+          data-bgset="{% static 'images/privatebanking/advisorysolution.jpg' %}"
+          >
+          <div>
+            <h1>Advisory Solutions<br/></h1>
+            <p>Finding the right combination of investments for you</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="">
+  <div class="container">
+    <div class="row section-headline">
+      <div class="col-12 col-lg-10 col-xxl-8 mx-auto">
+        <h2>Finding the right combination of investments for you</h2>
+        <p class="indent">Our experts will be at your side – providing recommendations on the right moves to make.<br/><br/>Especially in periods of increased market volatility and uncertainty, market trends are difficult to predict. The professional approach and customised specialist advice on the management and diversification of your assets applied by EFG, can help you to take the right decision. <br/><br/>Depending on your needs, you can also have access to our investment specialists who can develop a customised solution. Our specialists constantly offer new investment opportunities as well as opinions on your own investment strategies. <br/><br/>Using a process of monitoring and selection, you can reach decisions based on precise information and well-timed proposals. We carefully analyse your risk profile and investment objectives to help you manage risks and benefit from the opportunities that arise, in line with your defined risk/return profile.</p>
+        <a href="/contact.html" title="Get in touch " class="btn">Get in touch <i class="icon-efg-line-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row teaser-wrapper">
+      <div class="col-12 col-xl-10 mx-auto">
+        <article class="teaser highlight ">
+          <a href="/private-banking/investment-solutions/advisory-solutions/advisory-solutions-disclaimer.html" title="EFG Advisory Solutions">
+            <div class="image position-relative">
+              <div class="lazyload" data-sizes="auto" data-bgset="{% static 'images/privatebanking/rfbsolution.jpg' %}"></div>
+            </div>
+            <div class="content">
+              <span class="label">
+              </span>
+              <div>
+                <h4>EFG Advisory Solutions</h4>
+                <p>Whether you want access to the full breadth and depth of our investment expertise, or just need to lean on us for individual transactions, we offer different levels of advisory solutions depending on your needs. </p>
+                <span class="link-btn">Explore our solutions</span>
+              </div>
+            </div>
+          </a>
+        </article>
+      </div> </div>
+    </div>
+  </section>
+  {% include 'itstart.html'%}
+      {% endblock %}

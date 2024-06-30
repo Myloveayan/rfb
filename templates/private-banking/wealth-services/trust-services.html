@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+RFB|
+{% endblock %}
+
+{% block content %}
+<div class="main-content">
+  <section class="hero-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="breadcrumb">
+            <ul>
+              <li><a href="/">Homepage</a></li>
+              <li><a href="/private-banking.html">Private Banking</a></li>
+              <li><a href="/private-banking/wealth-services.html">Wealth Services</a></li>
+              <li><span>Trust Services</span></li>
+            </ul>
+          </nav>
+          <nav class="breadcrumb-mobile">
+            <a href="#"><i class="icon-efg-breadcrumb"></i><span>Trust Services</span><i class="icon-efg-arrow-down"></i></a>
+            <div>
+              <ul>
+                <li><a href="/">Homepage</a></li>
+                <li><a href="/private-banking.html">Private Banking</a></li>
+                <li><a href="/private-banking/wealth-services.html">Wealth Services</a></li>
+                <li><span>Trust Services</span></li>
+              </ul>
+              <a href="#" class="btn close">Close</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="hero-content lazyload" data-sizes="auto"
+          data-bgset="{% static 'images/privatebanking/trust.jpg' %}"
+          >
+          <div>
+            <h1>Trust Services </h1>
+            <p>Manage complex family wealth and preserve capital</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="">
+  <div class="container">
+    <div class="row section-headline">
+      <div class="col-12 col-lg-10 col-xxl-8 mx-auto">
+        <h2>Solutions for wealth protection and transferral</h2>
+        <p class="indent">The EFG Wealth Solutions Trust division specialises in the efficient structuring, protection and transfer of wealth using a range of tools and vehicles – including trusts, companies and foundations.<br/><br/>Headquartered in Jersey, Channel Islands, we also offer services from our offices in Singapore and the Bahamas.<br/><br/>Our mission is to deliver first-class client service that combines technical expertise and personal contact with state-of-the-art technology and a proactive and pragmatic approach.<br/><br/>We have extensive international experience and expertise – enabling us to serve clients around the globe with a wide range of assets and interests.<br/><br/>We work alongside your legal and tax advisors to create bespoke solutions that can help to protect your assets and facilitate the transfer of wealth between generations. </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-10 col-xxl-8 mx-auto">
+        <article class="text-article">
+          <h3>Our solutions</h3>
+          <p>Trusts are used for a variety of purposes, including asset protection, preservation of family wealth, safeguarding of the interests of vulnerable beneficiaries, and charitable or philanthropic endeavours. In addition to acting as trustees, we can create, manage and administer a variety of trust types &ndash; depending on your specific needs as well as tax and legal aspects.</p>
+          <p>Our specialists can serve as the directors and officers of companies or as members of the Board of Trustees of foundations &ndash; exercising full management and control, as well as providing all the necessary administration and accounting services.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-10 col-xxl-8 mx-auto">
+        <article class="text-article">
+          <h3>Our corporate and trust specialists</h3>
+          <p>We always put the interests of you and your family first and we provide continuity of asset ownership and management across the generations &ndash; easing the burden of asset oversight and administration.</p>
+          <p>Our specialists work in partnership with you and your advisors, building long-term relationships between trustees and beneficiaries. We offer you swift and flexible support to address your specific needs.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bkg-light-grey ">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-10 mx-auto">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="contact-block">
+              <h4>EFG Wealth Solutions (Jersey) Limited</h4>
+              <p>44 Esplanade St. Helier - JE1 3FG Jersey</p>
+              <ul>
+                <li><i class="icon-efg-phone"></i><a href="tel:+44 1534 605 600" class="phone">+44 1534 605 600</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="contact-block">
+              <h4>EFG Wealth Solutions (Singapore) Limited</h4>
+              <p>79 Robinson Road #18-03 - 068897 Singapore</p>
+              <ul>
+                <li><i class="icon-efg-phone"></i><a href="tel:+65 6595 4998" class="phone">+65 6595 4998</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="contact-block">
+              <h4>EFG Bank &amp; Trust (Bahamas) Ltd</h4>
+              <p>Offices at Old Fort, Building One Lyford Cay - Nassau</p>
+              <ul>
+                <li><i class="icon-efg-phone"></i><a href="tel:+1 242 502 5400" class="phone">+1 242 502 5400</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% include 'itstart.html' %}{% endblock %}

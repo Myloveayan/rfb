@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+RFB|
+{% endblock %}
+
+{% block content %}
+<div class="main-content">
+  <section class="hero-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="breadcrumb">
+            <ul>
+              <li><a href="/">Homepage</a></li>
+              <li><a href="/private-banking.html">Private Banking</a></li>
+              <li><a href="/private-banking/investment-solutions.html">Investment Solutions</a></li>
+              <li><span>Advanced Investment Solutions</span></li>
+            </ul>
+          </nav>
+          <nav class="breadcrumb-mobile">
+            <a href="#"><i class="icon-efg-breadcrumb"></i><span>Advanced Investment Solutions</span><i class="icon-efg-arrow-down"></i></a>
+            <div>
+              <ul>
+                <li><a href="/">Homepage</a></li>
+                <li><a href="/private-banking.html">Private Banking</a></li>
+                <li><a href="/private-banking/investment-solutions.html">Investment Solutions</a></li>
+                <li><span>Advanced Investment Solutions</span></li>
+              </ul>
+              <a href="#" class="btn close">Close</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="hero-content lazyload" data-sizes="auto"
+          data-bgset="{% static 'images/privatebanking/advanced.jpg' %}"
+          >
+          <div>
+            <h1>Advanced Investment Solutions</h1>
+            <p>Going beyond to cover all investment bases</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="">
+  <div class="container">
+    <div class="row section-headline">
+      <div class="col-12 col-lg-10 col-xxl-8 mx-auto">
+        <h2>A value added approach to your investments</h2>
+        <p class="indent">If you&#039;re determined to push for the best opportunities, then consider our advanced investment solutions. We can offer a comprehensive range of solutions from structured products to trading services, selected to enhance your unique portfolio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bkg-light-grey overflow-hidden">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="side-component full align-top">
+          <div class="bkg-light-grey side-content">
+            <h3>Structured products</h3>
+            <div class="text-article mt-base"><p>Easily adapted to meet specific objectives, structured products form part of our value-enhancing recommendations. For most, structured products offer the benefit of upside potential coupled with downside protection, with returns linked to underlying investments &ndash; all in a packaged and easily accessible form. If you have more sophisticated requirements, structured products can be used to exploit highly specialised opportunities that require in-depth technical or structuring expertise.</p>
+            </div>
+            <a href="/contact.html" class="btn mt-20">Get in touch </a>
+          </div>
+          <div class="side-image">
+            <div class="lazyload" data-sizes="auto" data-bgset="{% static 'images/privatebanking/structured.jpg' %}"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bkg-light-grey overflow-hidden m-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="side-component full align-top">
+          <div class="bkg-light-grey side-content order-lg-2">
+            <h3>Islamic solutions</h3>
+            <div class="text-article mt-base"><p>EFG Bank has a long lasting tradition and experience in developing Sharia-compliant investment solutions and credit facilities. We offer both an advisory service and a discretionary mandate portfolio, available in different strategies, which integrate the principles of the Sharia and represent also an essential element of our socially responsible offering.</p>
+            </div>
+            <a href="/contact.html" class="btn mt-20">Get in touch </a>
+          </div>
+          <div class="side-image order-lg-1">
+            <div class="lazyload" data-sizes="auto" data-bgset="{% static 'images/privatebanking/islamicsolution.jpg' %}"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% include 'itstart.html' %}
+    {% endblock %}

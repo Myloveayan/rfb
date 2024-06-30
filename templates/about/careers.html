@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+RFB|
+{% endblock %}
+
+{% block content %}
+<div class="main-content">
+  <section class="hero-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="breadcrumb">
+            <ul>
+              <li><a href="/">Homepage</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><span>Careers</span></li>
+            </ul>
+          </nav>
+          <nav class="breadcrumb-mobile">
+            <a href="#"><i class="icon-efg-breadcrumb"></i><span>Careers</span><i class="icon-efg-arrow-down"></i></a>
+            <div>
+              <ul>
+                <li><a href="/">Homepage</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><span>Careers</span></li>
+              </ul>
+              <a href="#" class="btn close">Close</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="hero-content lazyload" data-sizes="auto"
+          data-bgset="{% static 'images/about/career.jpg' %}"
+          >
+          <div>
+            <h1>Careers</h1>
+            <p>A stimulating working environment for strong entrepreneurial spirits</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="">
+  <div class="container">
+    <div class="row section-headline">
+      <div class="col-12 col-lg-10 col-xxl-8 mx-auto">
+        <h2>Empowering our private bankers to serve our clients</h2>
+        <p class="indent">At EFG we empower our teams to think entrepreneurially and put our clients&#039; needs first.<br/><br/>If you’re a talented professional who prefers to focus on creating the best outcomes for clients, we can offer you the role you deserve.</p>
+      </div>
+    </div>
+  </div>
+</section><section>
+  <div class="container">
+    <div class="row section-headline mb-med">
+      <div class="col-12 col-lg-8 col-xl-11 offset-xl-1">
+        <h2>Careers at EFG</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-xl-10 mx-auto">
+        <div class="teaser-wrapper-block teaser1">
+          <article class="teaser above">
+            <a href="/about/careers/client-relationships.html" title="Client relationship roles">
+              <picture class="image">
+                <source data-srcset="" media="(max-width: 575px)">
+                  <source data-srcset="" media="(max-width: 768px)">
+                    <source data-srcset="" media="(max-width: 1439px)">
+                      <source data-srcset="/.imaging/mte/efg-revamp/1396x400/dam/efg/private-banking/Client_Relationships_Bar_Image_1680x541_72dpi.png/jcr:content/Client_Relationships_Bar_Image_1680x541_72dpi.png">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/.imaging/mte/efg-revamp/1396x400/dam/efg/private-banking/Client_Relationships_Bar_Image_1680x541_72dpi.png/jcr:content/Client_Relationships_Bar_Image_1680x541_72dpi.png" width="1396" height="400" class="lazyload" alt="Client relationship roles" />
+                      </picture>
+                      <div class="content">
+                        <h3>Client relationship roles</h3>
+                        <p>A unique business model and strategy that supports you in building long-term relationships with your clients.</p>
+                        <span class="link-btn">Learn more</span>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bkg-light-grey overflow-hidden">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="side-component full align-top">
+                  <div class="bkg-light-grey side-content order-lg-2">
+                    <h3>Join our team</h3>
+                    <div class="text-article mt-base"><p>An environment where talent and entrepreneurial instinct yields dividends. A commitment to excellence, team-work and innovation whatever the role.</p>
+                    </div>
+                    <a target="_blank" href="https://fa-eqai-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1" class="btn mt-20">Explore opportunities</a>
+                  </div>
+                  <div class="side-image order-lg-1">
+                    <div class="lazyload" data-sizes="auto" data-bgset="{% static 'images/about/team.jpg' %}"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {% include 'itstart.html' %}{% endblock %}

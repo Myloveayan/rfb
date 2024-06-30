@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+RFB|
+{% endblock %}
+
+{% block content %}
+<div class="main-content">
+  <section class="hero-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="breadcrumb">
+            <ul>
+              <li><a href="/">Homepage</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><span>Our history</span></li>
+            </ul>
+          </nav>
+          <nav class="breadcrumb-mobile">
+            <a href="#"><i class="icon-efg-breadcrumb"></i><span>Our history</span><i class="icon-efg-arrow-down"></i></a>
+            <div>
+              <ul>
+                <li><a href="/">Homepage</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><span>Our history</span></li>
+              </ul>
+              <a href="#" class="btn close">Close</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="hero-content lazyload" data-sizes="auto"
+          data-bgset="{% static 'images/about/bank.jpg' %}"
+          >
+          <div>
+            <h1>Our history</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-10 col-xxl-8 mx-auto">
+        <article class="text-article">
+          <h3>A history of entrepreneurship</h3>
+          <p>Headquartered in Zurich, EFG International is a private bank offering comprehensive, first-class investment, wealth and credit solutions to private and institutional clients on a global scale.</p>
+          <p>Operating in around 40 locations worldwide with a network spanning Europe, Asia Pacific, the Americas and the Middle East, EFG has around 2,700 employees including more than 650 highly experienced Client Relationship Officers.</p>
+          <p>An entrepreneurial spirit has shaped EFG ever since the business was established in Zurich by the Latsis family in 1995. The EFG brand was launched in 1997. Building on our strengths as advisors with a global perspective, EFG has developed from a start-up into a leading Swiss private bank over the last 25 years. Today, we have Assets under Management totalling CHF 143.1&nbsp;billion*, a strong capital position and a highly liquid balance sheet.</p>
+          <p>The acquisition and successful integration of BSI between 2016 and end-2018 respectively, represents one of the most important transformations in Swiss private banking in the last decade. With its increased size and scale, EFG has significantly improved its competitive market position, targeting profitable and sustainable growth &ndash; as outlined in our 2022 strategic plan.</p>
+          <p>Listed on the SIX Swiss Exchange since 2005, EFG offers financial security and solidity. We are committed to being a leading independent partner to our clients. We combine a distinctive relationship-driven, entrepreneurial approach with a full range of wealth management services and investment solutions to achieve client satisfaction and deliver shareholder value. EFG&rsquo;s largest shareholders are EFG Bank European Financial Group (controlled by the Latsis family interests) and BTG Pactual.</p>
+          <p>* As of 31 December 2022</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bkg-light-grey overflow-hidden">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="side-component full align-top">
+          <div class="bkg-light-grey side-content">
+            <h3>Our philosophy</h3>
+            <div class="text-article mt-base"><p>We think and act like entrepreneurs. We design and deliver customised solutions that meet our clients&rsquo; individual goals and ambitions - creating a new banking experience.</p>
+            </div>
+            <a href="/about/our-philosophy.html" class="btn mt-20">Discover more</a>
+          </div>
+          <div class="side-image">
+            <div class="lazyload" data-sizes="auto" data-bgset="{% static 'images/about/think.jpg' %}"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% include 'itstart.html' %}{% endblock %}
