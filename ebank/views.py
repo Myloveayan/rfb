@@ -20,17 +20,50 @@ class CustomerCreateView(CreateView):
     success_url = reverse_lazy('account_created')
     template_name = 'registration/open_account.html'
 
+import json
+import csv
+from django.shortcuts import render
 
-@login_required
 def transaction_history(request):
-    transactions = Transaction.objects.filter(account__user=request.user)
+    transactions = []
+
+    # Replace 'path_to_your_csv_file.csv' with the actual path to your CSV file
+    with open('C:/Users/Abbati/Documents/RFBank/data/history.csv', newline='') as csvfile:
+        csvreader = csv.DictReader(csvfile)
+        for row in csvreader:
+            transactions.append(row)
+
+    # Render the template with the transactions data
     return render(request, 'ebank/transaction_history.html', {'transactions': transactions})
 
+import csv
+from django.shortcuts import render
+from django.contrib.auth.decorators import login_required
+from .models import BankAccount
 
 @login_required
 def bank_accounts(request):
+    transactions = []
     bank_accounts = BankAccount.objects.filter(user=request.user)
-    return render(request, 'ebank/bank_accounts.html', {'bank_accounts': bank_accounts})
+
+    # Adjust path according to your actual file location
+    csv_file_path = 'C:/Users/Abbati/Documents/RFBank/data/preview.csv'
+
+    try:
+        with open(csv_file_path, newline='') as csvfile:
+            csvreader = csv.DictReader(csvfile)
+            for row in csvreader:
+                transactions.append(row)
+    except FileNotFoundError:
+        # Handle file not found error appropriately
+        # For example, raise an exception or provide a default behavior
+        pass
+
+    return render(request, 'ebank/bank_accounts.html', {
+        'bank_accounts': bank_accounts,
+        'transactions': transactions
+    })
+
 
 
 def register(request):

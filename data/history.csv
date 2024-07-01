@@ -1,0 +1,67 @@
+ID,Date,Description,Credit,Debit,Reference,Balance
+33,16-May-24,Transfer to Elina Winter,0,18000,2345678903D,47626.5
+33,16-May-24,Transaction fee,0,20,2345678903D,65626.5
+32,1-May-24,Monthly account maintenance,0,50.5,1234567892C,65646.5
+32,1-May-24,Transaction fee,0,20.5,1234567892C,65697
+31,12-Apr-24,Transfer from Noah Koch,20000.75,0,9012345671B,65717.5
+31,12-Apr-24,Transaction fee,0,20.75,9012345671B,45716.75
+30,1-Apr-24,Monthly account maintenance,0,50.75,H7890123450A,45737.5
+30,1-Apr-24,Transaction fee,0,20.75,H7890123450A,45788.25
+29,20-Mar-24,Transfer to Lina Schulz,0,15000.5,G678901234Z,45809
+29,20-Mar-24,Transaction fee,0,20.5,G678901234Z,60809.5
+28,1-Mar-24,Monthly account maintenance,0,50.25,F567890123Y,60830
+28,1-Mar-24,Transaction fee,0,20.25,F567890123Y,60880.25
+27,15-Feb-24,Transfer from Felix Mayer,18000,0,E456789012X,60900.5
+27,15-Feb-24,Transaction fee,0,20,E456789012X,42900.5
+26,1-Feb-24,Monthly account maintenance,0,50,D345678901W,42920.5
+26,1-Feb-24,Transaction fee,0,20,D345678901W,42970.5
+25,20-Jan-24,Transfer to Leonie Berger,0,25000.75,C234567890V,42990.5
+25,20-Jan-24,Transaction fee,0,20.75,C234567890V,67991.25
+24,1-Jan-24,Monthly account maintenance,0,50.25,B123456789U,68012
+24,1-Jan-24,Transaction fee,0,20.25,B123456789U,68062.25
+23,18-Dec-23,Transfer from Timo Schmid,15000.5,0,A012345678T,68082.5
+23,18-Dec-23,Transaction fee,0,20.5,A012345678T,53082
+22,1-Dec-23,Monthly account maintenance,0,50.5,Z901234567S,53102.5
+22,1-Dec-23,Transaction fee,0,20.5,Z901234567S,53153
+21,12-Nov-23,Transfer to Mia Fischer,0,18000.25,Y789123456R,53173.5
+21,12-Nov-23,Transaction fee,0,20.25,Y789123456R,71173.75
+20,1-Nov-23,Monthly account maintenance,0,50,X678912345Q,71194
+20,1-Nov-23,Transaction fee,0,20,X678912345Q,71244
+19,20-Oct-23,Transfer from Laura Weber,20000.75,0,W567891234P,71264
+19,20-Oct-23,Transaction fee,0,20.75,W567891234P,51263.25
+18,1-Oct-23,Monthly account maintenance,0,50.75,V456789012O,51284
+18,1-Oct-23,Transaction fee,0,20.75,V456789012O,51334.75
+17,15-Sep-23,Transfer to Marco Lehmann,0,15000.25,U345678901N,51355.5
+17,15-Sep-23,Transaction fee,0,20.25,U345678901N,66355.75
+16,1-Sep-23,Monthly account maintenance,0,50.25,T234567890M,66376
+16,1-Sep-23,Transaction fee,0,20.25,T234567890M,66426.25
+15,10-Aug-23,Transfer from Lara Vogt,25000.5,0,S123456789L,66446.5
+15,10-Aug-23,Transaction fee,0,20.5,S123456789L,41446
+14,1-Aug-23,Monthly account maintenance,0,50.5,901234567K,41466.5
+14,1-Aug-23,Transaction fee,0,20.5,901234567K,41517
+13,5-Jul-23,Transfer to Jonas Huber,0,18000,R890123456J,41537.5
+13,5-Jul-23,Transaction fee,0,20,R890123456J,59537.5
+12,1-Jul-23,Monthly account maintenance,0,50.75,789012345I,59557.5
+12,1-Jul-23,Transaction fee,0,20.75,789012345I,59608.25
+11,20-Jun-23,Transfer from Emma Fischer,15000.25,0,Q678901234H,59629
+11,20-Jun-23,Transaction fee,0,20.25,Q678901234H,44628.75
+10,1-Jun-23,Monthly account maintenance,0,50.25,567890123G,44649
+10,1-Jun-23,Transaction fee,0,20.25,567890123G,44699.25
+9,10-May-23,Transfer to Lucas Keller,0,12000.5,P456789012F,44719.5
+9,10-May-23,Transaction fee,0,20.5,P456789012F,56720
+8,1-May-23,Monthly account maintenance,0,50,234567890E,56740.5
+8,1-May-23,Transaction fee,0,20,234567890E,56790.5
+7,2-Apr-23,Transfer from Paul Wagner,18000.75,0,789012345D,56810.5
+7,2-Apr-23,Transaction fee,0,20.75,789012345D,38809.75
+6,15-Mar-23,Transfer to Sophia Schneider,0,15000.25,M345678912,38830.5
+6,15-Mar-23,Transaction fee,0,20.25,M345678912,53830.75
+5,1-Mar-23,Monthly account maintenance,0,50.5,123456789C,53851
+5,1-Mar-23,Transaction fee,0,20.5,123456789C,53901.5
+4,5-Feb-23,Transfer from Luca Zimmermann,25000,0,567891234B,53922
+4,5-Feb-23,Transaction fee,0,20,567891234B,28922
+3,1-Feb-23,Monthly account maintenance,0,50.75,987654321A,28942
+3,1-Feb-23,Transaction fee,0,20.75,987654321A,28992.75
+2,1-Jan-23,Transfer to Anna Meier,0,20000.25,N234567891,29013.5
+2,1-Jan-23,Transaction fee,0,20.25,N234567891,49013.75
+1,16-May-22,Transfer from Hans Müller,15000.5,0,R123456789,49034
+1,16-May-22,Transaction fee,0,20.5,R123456789,34033.5

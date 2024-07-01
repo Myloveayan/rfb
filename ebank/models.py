@@ -44,7 +44,9 @@ class BankAccount(models.Model):
 
 class Transaction(models.Model):
     date = models.CharField(max_length=100)
-    transaction_type = models.CharField(max_length=10)
-    remark=models.CharField(max_length=300)
-    amount = models.DecimalField(max_digits=10, decimal_places=2)
-    balance=models.DecimalField(max_digits=10, decimal_places=2)
+    description = models.CharField(max_length=100)
+    credit = models.CharField(max_length=100, blank=True)
+    debit = models.CharField(max_length=100, blank=True)
+    reference=models.CharField(max_length=100)
+
+    balance=models.description = models.CharField(max_length=100)

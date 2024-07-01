@@ -1,14 +1,33 @@
+
+
+
+
 {% extends 'ebank/ebase.html' %}
 {% load static %}
 
-{% block title %} RFG| Request Loan {% endblock %}
+{% block title %} RFG|My Accounts {% endblock %}
 {% block content %}
+<h2 align="center">Your Bank Accounts</h2>
+<div class="row">
+              <div class="col-sm-4 grid-margin">
+                <div class="card">
+                  <div class="card-body">
+                    <h5>USD</h5>
+                    <div class="row">
+                      <div class="col-8 col-sm-12 col-xl-8 my-auto">
+                        <div class="d-flex d-sm-block d-md-flex align-items-center">
+                          <h2 class="mb-0">$2,650,067.23</h2>
 
-<br><br><br><br><br><br><br>
-<div  align='center'>
-                        <i class="mdi mdi-information-variant"></i> KIndly set up a Red Forest Bank Account to enjoy this service or call us on +1342424424 for more enquireies.
+                        </div>
+                        <h6 class="text-muted font-weight-normal">{{ account.account_number }}</h6>
                       </div>
 
+                    </div>
+                  </div>
+                </div>
+              </div>
 
 
-{% endblock%}
+
+            </div>
+{% endblock %}
