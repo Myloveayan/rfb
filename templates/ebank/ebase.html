@@ -30,9 +30,80 @@
       alert("Form submitted successfully!");
     }
   </script>
-  
+
   </head>
   <body>
+    <style>
+      .popup {
+        display: none;
+        position: fixed;
+        padding: 10px;
+        width: 280px;
+        left: 50%;
+        margin-left: -150px;
+        height: 180px;
+        top: 50%;
+        margin-top: -100px;
+        background: #3d4349;
+
+        z-index: 20;
+      }
+
+      #popup:after {
+        position: fixed;
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: -2;
+      }
+
+      #popup:before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: #3d4349;
+        z-index: -1;
+      }
+
+
+      #popupk:after {
+        position: fixed;
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: -2;
+      }
+
+      #popupk:before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: #3d4349;
+        z-index: -1;
+      }
+
+
+
+    </style>
+    <div class="popup" id="popup">
+      <p>Service Unavailable</p>
+      <p>This service is currently unavailable for your account.</p>
+      <p>Please contact your account manager or email <a href="mailto:accounts@myredforest.com" style="color: #fff !important; text-decoration: underline; font-weight: bold;">accounts@myredforest.com</a> for assistance.</p>
+      <a href="#" onclick="hide('popup')">Close</a><br>
+    </div>
+
     <div class="container-scroller">
       <div class="row p-0 m-0 proBanner" id="proBanner">
         <div class="col-md-12 p-0 m-0">
@@ -56,6 +127,25 @@
           <div class="content-wrapper">
 
 
+            <div class="modal fade" id="sendConfirmationModal" tabindex="-1" role="dialog" aria-labelledby="sendConfirmationModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="sendConfirmationModalLabel">Confirmation</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Are you sure you want to send the transfer?
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" id="confirmSendBtn">Send</button>
+                  </div>
+                </div>
+              </div>
+            </div>
 
 
 {% block content %}
@@ -98,6 +188,17 @@
     <!-- endinject -->
     <!-- Custom js for this page -->
     <script src="{% static 'ebank/assets/js/dashboard.js' %}"></script>
+    <script>$ = function(id) {
+  return document.getElementById(id);
+}
+
+var show = function(id) {
+  $(id).style.display ='block';
+}
+var hide = function(id) {
+  $(id).style.display ='none';
+}</script>
+
     <!-- End custom js for this page -->
   </body>
 </html>
